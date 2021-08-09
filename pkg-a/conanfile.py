@@ -11,7 +11,7 @@ class PkgAConan(ConanFile):
     topics = ("<Put some tag here>", "<here>", "<and here>")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "fPIC": [True, False]}
-    default_options = {"shared": False, "fPIC": True}
+    default_options = {"shared": False, "fPIC": True, 'doxygen:enable_search': False}
     generators = "cmake"
     build_requires = "doxygen/1.9.1"
 

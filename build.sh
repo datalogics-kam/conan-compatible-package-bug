@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install a release doxygen
-conan install -if doxygen doxygen/1.9.1@ --build missing
+conan install -if doxygen doxygen/1.9.1@ --build missing -o doxygen:enable_search=False
 
 # Export pkg-a, which build_requires doxygen
 conan export pkg-a
